@@ -146,7 +146,7 @@ fun FormInputSiswa(
 
         HorizontalDivider(
             modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.padding_medium)),
-            thickness = dimensionResource(id = R.dimen.),
+            thickness = dimensionResource(id = R.dimen.divider_thickness),
             color = androidx.compose.ui.graphics.Color.Blue
         )
     }
