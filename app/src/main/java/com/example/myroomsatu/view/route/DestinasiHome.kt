@@ -1,4 +1,4 @@
-package com.example.myroomsatu.route
+package com.example.myroomsatu.view.route
 
 import com.example.myroomsatu.R
 
