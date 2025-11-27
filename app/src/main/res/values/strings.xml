@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">My RoomSatu</string>
+    <string name="nama">Nama Siswa*</string>
+    <string name="alamat">Alamat Siswa*</string>
+    <string name="telpon">Telpon Siswa*</string>
+    <string name="required_field">* required fields</string>
 
 </resources>
