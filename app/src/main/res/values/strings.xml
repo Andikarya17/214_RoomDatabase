@@ -7,4 +7,10 @@
     <string name="entry_siswa">Tambah Siswa</string>
     <string name="deskripsi_no_item">Tidak ada data Siswa. Tap + untuk menambah data</string>
     <string name="btn_submit">Submit</string>
+    <string name="detail_siswa">Detail Siswa</string>
+    <string name="nama1">Nama Siswa  :</string>
+    <string name="alamat1">Alamat Siswa :</string>
+    <string name="telpon1">Telpon Siswa :</string>
+    <string name="update">Edit</string>
+    <string name="delete">Hapus</string>
 </resources>
