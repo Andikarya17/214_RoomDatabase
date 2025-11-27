@@ -24,8 +24,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.foundation.text.KeyboardOptions
+import com.example.myroomsatu.viewmodel.DetailSiswa
 import com.example.myroomsatu.viewmodel.EntryViewModel
-import com.example.myroomsatu.viewmodel.PenyediaViewModel
+import com.example.myroomsatu.viewmodel.UIStateSiswa
+import com.example.myroomsatu.viewmodel.provider.PenyediaViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -90,7 +92,7 @@ fun EntrySiswaBody(
             shape = MaterialTheme.shapes.small,
             modifier = Modifier.fillMaxWidth()
         ) {
-            Text(text = stringResource(id = R.string.submit))
+            Text(text = stringResource(id = R.string.btn_submit))
         }
     }
 }
@@ -111,7 +113,7 @@ fun FormInputSiswa(
         OutlinedTextField(
             value = detailSiswa.nama,
             onValueChange = { onValueChange(detailSiswa.copy(nama = it)) },
-            label = { Text(text = stringResource(id = R.string.nama_siswa)) },
+            label = { Text(text = stringResource(id = R.string.nama1)) },
             modifier = Modifier.fillMaxWidth(),
             enabled = enabled,
             singleLine = true
@@ -120,7 +122,7 @@ fun FormInputSiswa(
         OutlinedTextField(
             value = detailSiswa.alamat,
             onValueChange = { onValueChange(detailSiswa.copy(alamat = it)) },
-            label = { Text(text = stringResource(id = R.string.alamat_siswa)) },
+            label = { Text(text = stringResource(id = R.string.alamat)) },
             modifier = Modifier.fillMaxWidth(),
             enabled = enabled,
             singleLine = true
@@ -129,7 +131,7 @@ fun FormInputSiswa(
         OutlinedTextField(
             value = detailSiswa.telpon,
             onValueChange = { onValueChange(detailSiswa.copy(telpon = it)) },
-            label = { Text(text = stringResource(id = R.string.telpon_siswa)) },
+            label = { Text(text = stringResource(id = R.string.telpon1)) },
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number),
             modifier = Modifier.fillMaxWidth(),
             enabled = enabled,
@@ -137,14 +139,14 @@ fun FormInputSiswa(
         )
         if (enabled) {
             Text(
-                text = stringResource(id = R.string.required_fields),
+                text = stringResource(id = R.string.required_field),
                 modifier = Modifier.padding(start = dimensionResource(id = R.dimen.padding_medium))
             )
         }
 
         HorizontalDivider(
             modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.padding_medium)),
-            thickness = dimensionResource(id = R.dimen.divider_thickness),
+            thickness = dimensionResource(id = R.dimen.),
             color = androidx.compose.ui.graphics.Color.Blue
         )
     }
