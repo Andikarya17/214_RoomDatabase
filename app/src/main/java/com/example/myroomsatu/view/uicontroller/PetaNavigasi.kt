@@ -7,11 +7,10 @@ import androidx.navigation.compose.rememberNavController
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.example.myroomsatu.route.DestinasiEntry
-import com.example.myroomsatu.route.DestinasiHome
-
-
-
+import com.example.myroomsatu.view.route.DestinasiEntry
+import com.example.myroomsatu.view.route.DestinasiHome
+import com.example.myroomsatu.view.uicontroller.EntrySiswaScreen
+import com.example.myroomsatu.view.uicontroller.HomeScreen
 
 
 @Composable
