@@ -60,7 +60,7 @@ fun HomeScreen(
             ) {
                 Icon(
                     imageVector = Icons.Default.Add,
-                    contentDescription = stringResource(id = R.string.tambah_siswa)
+                    contentDescription = stringResource(id = R.string.entry_siswa)
                 )
             }
         }
@@ -87,7 +87,7 @@ fun BodyHome(
     ) {
         if (itemSiswa.isEmpty()) {
             Text(
-                text = stringResource(id = R.string.tidak_ada_data_siswa),
+                text = stringResource(id = R.string.deskripsi_no_item),
                 textAlign = TextAlign.Center,
                 style = MaterialTheme.typography.titleLarge
             )

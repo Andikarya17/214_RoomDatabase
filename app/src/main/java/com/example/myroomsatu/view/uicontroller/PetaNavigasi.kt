@@ -1,4 +1,4 @@
-package com.example.myroomsatu.uicontroller
+package com.example.myroomsatu.view.uicontroller
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
