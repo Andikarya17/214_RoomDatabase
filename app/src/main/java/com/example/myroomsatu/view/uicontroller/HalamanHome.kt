@@ -66,3 +66,26 @@ fun BodyHome(
     }
 }
 
+@Composable
+fun ListSiswa(
+    itemSiswa: List<Siswa>,
+    modifier: Modifier = Modifier,
+    contentPadding: PaddingValues = PaddingValues(0.dp)
+) {
+    LazyColumn(
+        modifier = modifier,
+        contentPadding = contentPadding
+    ) {
+        items(
+            items = itemSiswa,
+            key = { it.id }
+        ) { person ->
+            DataSiswa(
+                siswa = person,
+                modifier = Modifier.padding(all = dimensionResource(id = R.dimen.padding_small))
+            )
+        }
+    }
+}
+
+
