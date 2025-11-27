@@ -14,6 +14,18 @@ import androidx.compose.ui.text.input.KeyboardType
 import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.myroomsatu.R
 import kotlinx.coroutines.launch
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.HorizontalDivider
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.Scaffold
+import androidx.compose.foundation.text.KeyboardOptions
+import com.example.myroomsatu.viewmodel.EntryViewModel
+import com.example.myroomsatu.viewmodel.PenyediaViewModel
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -29,7 +41,7 @@ fun EntrySiswaScreen(
         modifier = modifier,
         topBar = {
             SiswaTopAppBar(
-                title = stringResource(id = com.example.daoapp.view.route.DestinasiEntry.titleRes),
+                title = stringResource(id = com.example.myroomsatu.view.route.DestinasiEntry.titleRes),
                 canNavigateBack = true,
                 scrollBehavior = scrollBehavior,
                 navigateUp = navigateBack
@@ -123,4 +135,18 @@ fun FormInputSiswa(
             enabled = enabled,
             singleLine = true
         )
+        if (enabled) {
+            Text(
+                text = stringResource(id = R.string.required_fields),
+                modifier = Modifier.padding(start = dimensionResource(id = R.dimen.padding_medium))
+            )
+        }
+
+        HorizontalDivider(
+            modifier = Modifier.padding(bottom = dimensionResource(id = R.dimen.padding_medium)),
+            thickness = dimensionResource(id = R.dimen.divider_thickness),
+            color = androidx.compose.ui.graphics.Color.Blue
+        )
+    }
+}
 
